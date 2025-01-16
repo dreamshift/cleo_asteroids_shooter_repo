@@ -117,6 +117,8 @@ if keyboard_check_pressed(ord("W"))
 		direction = obj_player.image_angle + random_range(-90, 90) + 180
 		speed = random_range(1, 3)
 		motion_set(direction, speed)
+		creator = _id
+		faction = "ally"
 	}
 	}
 	}
@@ -140,6 +142,8 @@ if keyboard_check_pressed(ord("A"))
 		direction = obj_player.image_angle + random_range(-90, 90) - 90
 		speed = random_range(1, 3)
 		motion_set(direction, speed)
+		creator = _id
+		faction = "ally"
 	}
 	}
 	}
@@ -163,6 +167,8 @@ if keyboard_check_pressed(ord("S"))
 		direction = obj_player.image_angle + random_range(-90, 90)
 		speed = random_range(1, 3)
 		motion_set(direction, speed)
+		creator = _id
+		faction = "ally"
 	}
 	}
 	}
@@ -186,6 +192,8 @@ if keyboard_check_pressed(ord("D"))
 		direction = obj_player.image_angle + random_range(-90, 90) + 90
 		speed = random_range(1, 3)
 		motion_set(direction, speed)
+		creator = _id
+		faction = "ally"
 	}
 	}
 	}
