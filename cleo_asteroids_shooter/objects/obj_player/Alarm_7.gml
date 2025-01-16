@@ -1,0 +1,1 @@
+/// @description energy blast cooldown
