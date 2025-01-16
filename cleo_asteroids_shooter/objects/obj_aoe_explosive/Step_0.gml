@@ -31,7 +31,7 @@ var _search_list = ds_list_create()
 
 	image_xscale = aoe_explosive_push_distance;
 	image_yscale = aoe_explosive_push_distance;
-	instance_place_list(x,y,obj_light_bullet,_search_list,true);
+	instance_place_list(x,y,obj_aoe_explosive_pusher,_search_list,true);
 	image_xscale = scale
 	image_yscale = scale
 	
@@ -49,17 +49,21 @@ if not ds_list_empty(_search_list)
 			_push_force = 0.15
 		}
 		
-		var _push_force_scaled = _push_force * _current.scale
+		var _push_force_scaled = _push_force * _current.aoe_explosive_push
 
 		motion_add(_current_dir+180,_push_force_scaled)
 		with _current
 		{
-			motion_add(_current_dir,_push_force_scaled/(scale/2))
+			motion_add(_current_dir,_push_force_scaled/(aoe_explosive_push/2))
 		}
 		if irandom_range(1,100) <= 75 and hp > 0
 		{
-			alarm[0] += 1 * _current.scale
-			alarm[1] += 1 * _current.scale
+			show_debug_message(_current.aoe_explosive_push)
+			var _aoe_explosive_push = max(1,_current.aoe_explosive_push)
+			_aoe_explosive_push = round(_aoe_explosive_push)
+			alarm[0] += 1 * _aoe_explosive_push
+			alarm[1] += 1 * _aoe_explosive_push
+			show_debug_message(_aoe_explosive_push)
 		}
 	}
 }

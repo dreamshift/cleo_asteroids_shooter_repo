@@ -1,3 +1,5 @@
+aoe_explosive_push = scale
+
 fade_delay_timer -= (1 * scale / 2) + 0.5
 
 if fade_delay_timer > fade_delay * 60

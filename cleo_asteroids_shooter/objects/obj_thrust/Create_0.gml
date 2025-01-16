@@ -4,6 +4,7 @@ friction = 0.03;
 
 fade = rand_fade - (speed/100);
 
-thrust_damage = 1
+thrust_damage = 0.75
 type = "debris"
 creator = undefined
+aoe_explosive_push = 0.5

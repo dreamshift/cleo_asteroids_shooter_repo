@@ -3,27 +3,17 @@ var _speed = speed
 
 var _thrust_damage = thrust_damage
 
-if is_undefined(creator)
-{
 
-if other.type != "bullet" and other.type != "player" and other.type != "aoe_explosive"
+if other.type != "bullet" and other.id != creator
 {
 	with other
 	{
-		hp -= _thrust_damage
-		motion_add(_direction,_speed/30)
+		if other.type != "aoe_explosive"
+		{
+			hp -= _thrust_damage
+		}
+		motion_add(_direction,_speed/60)
 	}
-}
-
-}
-else
-{
-	if other.type != "bullet" and other.id != creator and other.type != "aoe_explosive"
-	{
-		with other
-	{
-		hp -= _thrust_damage
-		motion_add(_direction,_speed/30)
-	}
-}
+	image_alpha -= 0.2
+	
 }
