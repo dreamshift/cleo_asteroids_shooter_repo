@@ -7,12 +7,13 @@ if not instance_exists(obj_player)
 	}
 }
 
-if global.game_start_cooldown = true
+if game_start_cooldown = true
 {
 	draw_text(288,220,"Pressing any mouse button will start the game and hide the tips.")
-	if mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_right)
+	if (mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_right))
 	{
-		global.game_start_cooldown = false
+		game_start_cooldown = false
+		progress_waves = true
 		alarm[1] = 1
 	}
 }

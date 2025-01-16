@@ -13,4 +13,5 @@ if other.type != "bullet" and other.uncollidable = false and uncollidable = fals
 		var _dir = point_direction(x,y,_x,_y)
 		motion_add(_dir+180,speed+0.5)
 	}
+	alarm[0] = 1
 }

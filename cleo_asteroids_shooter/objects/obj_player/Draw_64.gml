@@ -24,7 +24,7 @@ draw_text(288,20,"CONTROLS:")
 draw_text(288,40,"PRESS 1, 2, 3 ON YOUR KEYBOARD TO SWITCH WEAPONS!")
 draw_text(288,60,"WASD to Strafe. Strafe is relative to ship rotation.")
 draw_text(288,80,"Press F to Deflect projectiles in front of you.")
-if global.game_start_cooldown = true
+if obj_game.game_start_cooldown = true
 {
 	draw_text(288,120,"PRE-GAME TIPS:")
 	draw_text(288,140,"YOUR WEAPONS WILL INTERACT WITH EACH OTHER!")

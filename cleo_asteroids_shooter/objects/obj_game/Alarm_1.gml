@@ -3,11 +3,21 @@ if not instance_exists(obj_player)
 	exit
 }
 
-game_start_cooldown = false
-wave_number += 1
 global.wave_number = wave_number
 alarm[1] = 60 * 10
 
+if play_this_wave = true
+{
+	play_this_wave = false
+	var _chosen_wave = chosen_wave
+	if wave_number >= _chosen_wave.minwave and wave_number <= _chosen_wave.maxwave
+	{
+		alarm[1] = _chosen_wave.timer * 60
+	}
+}
+else
+{
+wave_number += 1
 var _preset_waves_length = array_length(preset_waves) - 1
 
 var _loops = 0
@@ -23,12 +33,12 @@ while (true)
 	}
 	chosen_wave = array_get(preset_waves,irandom_range(0,_preset_waves_length))
 	var _chosen_wave = chosen_wave
-	// show_debug_message(_chosen_wave)
 	if wave_number >= _chosen_wave.minwave and wave_number <= _chosen_wave.maxwave
 	{
 		alarm[1] = _chosen_wave.timer * 60
 		break;
 	}
+}
 }
 
 for (var i = 0; i < _chosen_wave.enemylist; ++i) 
