@@ -72,6 +72,10 @@ if mouse_check_button(mb_left)
 		motion_add(_dir, _speed)
 		creator = _id
 		faction = "ally"
+		random_accel = 0.04
+		random_dir = choose(90,-90)
+		random_dir += obj_player.image_angle
+		random_dir_offset = random_range(-25,25)
 	}
 	}
 	}
