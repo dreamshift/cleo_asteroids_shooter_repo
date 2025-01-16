@@ -51,7 +51,6 @@
   },
   "name":"cleo_asteroids_shooter",
   "resources":[
-    {"id":{"name":"obj_aoe_explosive_pusher","path":"objects/obj_aoe_explosive_pusher/obj_aoe_explosive_pusher.yy",},},
     {"id":{"name":"obj_aoe_explosive","path":"objects/obj_aoe_explosive/obj_aoe_explosive.yy",},},
     {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},

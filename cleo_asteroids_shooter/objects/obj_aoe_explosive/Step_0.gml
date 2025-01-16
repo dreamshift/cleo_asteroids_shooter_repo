@@ -31,7 +31,8 @@ var _search_list = ds_list_create()
 
 	image_xscale = aoe_explosive_push_distance;
 	image_yscale = aoe_explosive_push_distance;
-	instance_place_list(x,y,obj_aoe_explosive_pusher,_search_list,true);
+	instance_place_list(x,y,obj_faction,_search_list,true)
+	instance_place_list(x,y,obj_thrust,_search_list,true);
 	image_xscale = scale
 	image_yscale = scale
 	
@@ -41,6 +42,10 @@ if not ds_list_empty(_search_list)
 	for (var i = 0; i < _search_list_size; ++i)
 	{
 		var _current = ds_list_find_value(_search_list, i)
+		if !variable_instance_exists(_current, "aoe_explosive_push")
+		{
+			continue
+		}
 		var _current_dir = point_direction(x,y,_current.x,_current.y)
 		var _current_dist = point_distance(x,y,_current.x,_current.y)
 		var _push_force = 1 / _current_dist

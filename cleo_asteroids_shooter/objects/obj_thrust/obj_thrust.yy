@@ -14,10 +14,7 @@
     "name":"Weapons and Effects",
     "path":"folders/Important/Objects/Weapons and Effects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_aoe_explosive_pusher",
-    "path":"objects/obj_aoe_explosive_pusher/obj_aoe_explosive_pusher.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

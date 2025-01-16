@@ -16,8 +16,8 @@
     "path":"folders/Important/Objects/Weapons and Effects.yy",
   },
   "parentObjectId":{
-    "name":"obj_aoe_explosive_pusher",
-    "path":"objects/obj_aoe_explosive_pusher/obj_aoe_explosive_pusher.yy",
+    "name":"obj_faction",
+    "path":"objects/obj_faction/obj_faction.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

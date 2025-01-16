@@ -30,7 +30,6 @@
     {"name":"Timelines","order":10,"path":"folders/Not Important/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_aoe_explosive_pusher","order":6,"path":"objects/obj_aoe_explosive_pusher/obj_aoe_explosive_pusher.yy",},
     {"name":"obj_aoe_explosive","order":5,"path":"objects/obj_aoe_explosive/obj_aoe_explosive.yy",},
     {"name":"obj_enemy_basic_elite","order":2,"path":"objects/obj_enemy_basic_elite/obj_enemy_basic_elite.yy",},
     {"name":"obj_enemy_basic","order":1,"path":"objects/obj_enemy_basic/obj_enemy_basic.yy",},
