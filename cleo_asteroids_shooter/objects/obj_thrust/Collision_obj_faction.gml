@@ -8,11 +8,16 @@ if other.type != "bullet" and other.id != creator
 {
 	with other
 	{
-		if other.type != "aoe_explosive"
+		if type != "aoe_explosive"
 		{
 			hp -= _thrust_damage
+			motion_add(_direction,_speed/60)
 		}
-		motion_add(_direction,_speed/60)
+		else
+		{
+			motion_add(_direction,_speed/10)
+		}
+		
 	}
 	image_alpha -= 0.2
 	

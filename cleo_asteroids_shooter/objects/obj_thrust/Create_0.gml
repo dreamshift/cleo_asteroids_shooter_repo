@@ -7,7 +7,6 @@ fade = rand_fade - (speed/100);
 thrust_damage = 0.75
 type = "debris"
 creator = undefined
-aoe_explosive_push = 0.25
 
 random_dir = 0
 random_accel = 0
