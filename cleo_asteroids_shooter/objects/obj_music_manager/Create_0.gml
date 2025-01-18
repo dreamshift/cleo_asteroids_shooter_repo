@@ -4,7 +4,7 @@ mus_splitting_bullets,
 mus_last_stand
 ]
 
-global.music_volume = 0 // 0.5
+global.music_volume = 0.5
 
 game_songs_length = array_length(game_songs) - 1
 
