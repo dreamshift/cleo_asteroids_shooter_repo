@@ -5,7 +5,7 @@ var _x = x
 var _y = y
 var _crash_damage = crash_damage
 
-if other.type != "bullet" and other.uncollidable = false and uncollidable = false
+if other.type != "bullet" and other.uncollidable = false and uncollidable = false and other.faction != faction
 {
 	with other
 	{
@@ -13,4 +13,5 @@ if other.type != "bullet" and other.uncollidable = false and uncollidable = fals
 		var _dir = point_direction(x,y,_x,_y)
 		motion_add(_dir+180,speed+0.5)
 	}
+	// alarm[0] = 1
 }

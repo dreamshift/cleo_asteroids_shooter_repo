@@ -2,6 +2,7 @@ light_bullet_dmg = 6
 type = "bullet"
 faction = "neutral"
 scale = 1
+aoe_explosive_push = scale
 image_xscale = scale
 image_yscale = scale
 screenwrap = true

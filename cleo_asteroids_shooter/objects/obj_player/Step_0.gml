@@ -61,17 +61,21 @@ if mouse_check_button(mb_left)
 	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
 	audio_play_sound(snd_thrust, 0, 0, 1.0, 0, 1.0);
 	
-	repeat(1)
+	repeat(2)
 	{
 	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
 	with(_newthrust) 
 	{
-		direction = obj_player.image_angle + random_range(-25, 25) + 180
-		speed = random_range(2, 6)
-		motion_set(direction, speed)
-		motion_add(obj_player.direction,obj_player.speed)
+		motion_set(obj_player.direction,obj_player.speed)
+		var _dir = obj_player.image_angle + random_range(-25, 25) + 180
+		var _speed = random_range(2, 5)
+		motion_add(_dir, _speed)
 		creator = _id
 		faction = "ally"
+		random_accel = 0.04
+		random_dir = choose(90,-90)
+		random_dir += obj_player.image_angle
+		random_dir_offset = random_range(-25,25)
 	}
 	}
 	}
@@ -109,14 +113,18 @@ if keyboard_check_pressed(ord("W"))
 	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
 	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
 	
-	repeat(8)
+	repeat(15)
 	{
 	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
 	with(_newthrust) 
 	{
-		direction = obj_player.image_angle + random_range(-90, 90) + 180
-		speed = random_range(1, 3)
-		motion_set(direction, speed)
+		motion_set(obj_player.direction,obj_player.speed)
+		var _dir = obj_player.image_angle + random_range(-45, 45) + 180
+		var _speed = random_range(2, 5)
+		motion_add(_dir, _speed)
+		creator = _id
+		faction = "ally"
+		thrust_damage = 2
 	}
 	}
 	}
@@ -132,14 +140,18 @@ if keyboard_check_pressed(ord("A"))
 	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
 	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
 	
-	repeat(8)
+	repeat(15)
 	{
 	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
 	with(_newthrust) 
 	{
-		direction = obj_player.image_angle + random_range(-90, 90) - 90
-		speed = random_range(1, 3)
-		motion_set(direction, speed)
+		motion_set(obj_player.direction,obj_player.speed)
+		var _dir = obj_player.image_angle + random_range(-45, 45) - 90
+		var _speed = random_range(2, 5)
+		motion_add(_dir, _speed)
+		creator = _id
+		faction = "ally"
+		thrust_damage = 2
 	}
 	}
 	}
@@ -155,14 +167,18 @@ if keyboard_check_pressed(ord("S"))
 	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
 	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
 	
-	repeat(8)
+	repeat(15)
 	{
 	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
 	with(_newthrust) 
 	{
-		direction = obj_player.image_angle + random_range(-90, 90)
-		speed = random_range(1, 3)
-		motion_set(direction, speed)
+		motion_set(obj_player.direction,obj_player.speed)
+		var _dir = obj_player.image_angle + random_range(-45, 45)
+		var _speed = random_range(2, 5)
+		motion_add(_dir, _speed)
+		creator = _id
+		faction = "ally"
+		thrust_damage = 2
 	}
 	}
 	}
@@ -178,14 +194,18 @@ if keyboard_check_pressed(ord("D"))
 	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
 	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
 	
-	repeat(8)
+	repeat(15)
 	{
 	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
 	with(_newthrust) 
 	{
-		direction = obj_player.image_angle + random_range(-90, 90) + 90
-		speed = random_range(1, 3)
-		motion_set(direction, speed)
+		motion_set(obj_player.direction,obj_player.speed)
+		var _dir = obj_player.image_angle + random_range(-45, 45) + 90
+		var _speed = random_range(2, 5)
+		motion_add(_dir, _speed)
+		creator = _id
+		faction = "ally"
+		thrust_damage = 2
 	}
 	}
 	}

@@ -1,9 +1,10 @@
 randomize()
 alarm[0] = 60 * 5
 wave_number = 0 // will start the wave just after the one you put in
-global.wave_number = wave_number
-global.game_start_cooldown = true
+game_start_cooldown = true
+progress_waves = false
 frame = 0
+play_this_wave = false
 
 preset_waves = [
 	{ // 0-5. basic
