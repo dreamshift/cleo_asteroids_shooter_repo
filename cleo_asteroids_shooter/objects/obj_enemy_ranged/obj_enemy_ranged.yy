@@ -10,8 +10,8 @@
   "name":"obj_enemy_ranged",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Important/Objects/Enemy.yy",
+    "name":"Old enemies",
+    "path":"folders/Important/Objects/Old enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_basic",

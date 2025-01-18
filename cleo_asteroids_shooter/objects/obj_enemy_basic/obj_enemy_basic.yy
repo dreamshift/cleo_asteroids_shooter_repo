@@ -11,8 +11,8 @@
   "name":"obj_enemy_basic",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Important/Objects/Enemy.yy",
+    "name":"Old enemies",
+    "path":"folders/Important/Objects/Old enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_faction_enemy",
