@@ -27,7 +27,7 @@ if hp > max_hp
 
 // soft capping the speed, and making it scale based on thrust power
 
-player_ship_speed_cap = player_ship_thrust * sqrt(player_ship_thrust*0.2) + 2
+player_ship_speed_cap = thrust_force * sqrt(thrust_force*0.2) + 2
 if speed > player_ship_speed_cap and alarm[5] < 30 * player_ship_strafe_cooldown
 {
 	speed *= 0.97
@@ -54,31 +54,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y)
 
 if mouse_check_button(mb_left)
 {
-	motion_add(image_angle,player_ship_thrust/20)	// apply force
-	
-	{
-	var _sound_thrust_pitch = (random_range(0.75, 1.75));
-	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
-	audio_play_sound(snd_thrust, 0, 0, 1.0, 0, 1.0);
-	
-	repeat(2)
-	{
-	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
-	with(_newthrust) 
-	{
-		motion_set(obj_player.direction,obj_player.speed)
-		var _dir = obj_player.image_angle + random_range(-25, 25) + 180
-		var _speed = random_range(2, 5)
-		motion_add(_dir, _speed)
-		creator = _id
-		faction = "ally"
-		random_accel = 0.04
-		random_dir = choose(90,-90)
-		random_dir += obj_player.image_angle
-		random_dir_offset = random_range(-25,25)
-	}
-	}
-	}
+script_thrust()
 }
 
 // we want the 1, 2 and 3 buttons to switch between the three weapons
@@ -106,109 +82,29 @@ if alarm[5] <= 1
 if keyboard_check_pressed(ord("W")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown
-	speed = speed* 0.5
-	motion_add(image_angle,player_ship_thrust*0.75+1.5)
-{
-	var _sound_thrust_pitch = (random_range(1, 1.25));
-	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
-	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
-	
-	repeat(15)
-	{
-	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
-	with(_newthrust) 
-	{
-		motion_set(obj_player.direction,obj_player.speed)
-		var _dir = obj_player.image_angle + random_range(-45, 45) + 180
-		var _speed = random_range(2, 5)
-		motion_add(_dir, _speed)
-		creator = _id
-		faction = "ally"
-		thrust_damage = 2
-	}
-	}
-	}
+	speed = speed * 0.5
+	script_thrust(strafe_force ,0 ,2 ,15 ,2 ,5 ,0 ,45 ,x ,y ,1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("A")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	motion_add(image_angle+90,player_ship_thrust*0.75+1.5)
-{
-	var _sound_thrust_pitch = (random_range(1, 1.25));
-	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
-	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
-	
-	repeat(15)
-	{
-	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
-	with(_newthrust) 
-	{
-		motion_set(obj_player.direction,obj_player.speed)
-		var _dir = obj_player.image_angle + random_range(-45, 45) - 90
-		var _speed = random_range(2, 5)
-		motion_add(_dir, _speed)
-		creator = _id
-		faction = "ally"
-		thrust_damage = 2
-	}
-	}
-	}
+	script_thrust(strafe_force ,90 ,2 ,15 ,2 ,5 ,90 ,45 ,x ,y ,1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("S")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	motion_add(image_angle+180,player_ship_thrust*0.75+1.5)
-{
-	var _sound_thrust_pitch = (random_range(1, 1.25));
-	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
-	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
-	
-	repeat(15)
-	{
-	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
-	with(_newthrust) 
-	{
-		motion_set(obj_player.direction,obj_player.speed)
-		var _dir = obj_player.image_angle + random_range(-45, 45)
-		var _speed = random_range(2, 5)
-		motion_add(_dir, _speed)
-		creator = _id
-		faction = "ally"
-		thrust_damage = 2
-	}
-	}
-	}
+	script_thrust(strafe_force ,180 ,2 ,15 ,2 ,5 ,180 ,45 ,x ,y ,1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("D")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	motion_add(image_angle-90,player_ship_thrust*0.75+1.5)
-{
-	var _sound_thrust_pitch = (random_range(1, 1.25));
-	audio_sound_pitch(snd_thrust, _sound_thrust_pitch);
-	audio_play_sound(snd_thrust, 0, 0, 5.0, 0, 1.0);
-	
-	repeat(15)
-	{
-	var _newthrust = instance_create_layer(x + 0, y + 0, "Instances", obj_thrust);
-	with(_newthrust) 
-	{
-		motion_set(obj_player.direction,obj_player.speed)
-		var _dir = obj_player.image_angle + random_range(-45, 45) + 90
-		var _speed = random_range(2, 5)
-		motion_add(_dir, _speed)
-		creator = _id
-		faction = "ally"
-		thrust_damage = 2
-	}
-	}
-	}
+	script_thrust(strafe_force ,-90 ,2 ,15 ,2 ,5 ,-90 ,45 ,x ,y ,1 ,1.25 ,3)
 }
 }
 

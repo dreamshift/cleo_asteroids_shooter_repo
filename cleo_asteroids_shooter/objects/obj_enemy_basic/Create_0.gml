@@ -6,6 +6,7 @@ crash_damage = 8
 type = "generic"
 speed_cap = 3
 uncollidable = false
+faction = "enemy"
 
 enemy_thrust = 1
 enemy_friction = 0.04

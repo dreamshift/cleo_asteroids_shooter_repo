@@ -4,7 +4,7 @@ var _speed = speed
 var _thrust_damage = thrust_damage
 
 
-if other.type != "bullet" and other.id != creator
+if other.type != "bullet" and other.id != creator and other.faction != faction
 {
 	with other
 	{

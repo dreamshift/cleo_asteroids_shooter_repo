@@ -20,7 +20,8 @@ hp_regen = 5
 
 // simple, the acceleration
 
-player_ship_thrust = 2
+thrust_force = 2
+strafe_force = (thrust_force * 0.75 + 1.5) * 20
 
 // seconds between every strafe
 
