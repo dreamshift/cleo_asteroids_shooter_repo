@@ -5,7 +5,7 @@ var _x = x
 var _y = y
 var _crash_damage = crash_damage
 
-if other.type != "bullet" and other.uncollidable = false and uncollidable = false
+if other.faction != faction and other.type != "bullet" and other.uncollidable = false and uncollidable = false
 {
 	with other
 	{

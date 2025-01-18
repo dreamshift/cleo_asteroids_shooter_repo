@@ -10,4 +10,4 @@ if speed > 6
 	speed *= 0.97
 }
 
-motion_add(random_dir,random_accel)
+motion_add(random_accel_dir,random_accel)
