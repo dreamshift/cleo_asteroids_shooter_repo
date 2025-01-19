@@ -1,3 +1,5 @@
+event_inherited();
+
 faction = "enemy"
 type = "generic"
 
@@ -13,4 +15,3 @@ uncollidable = false
 screenwrap = true
 
 image_alpha = 0
-

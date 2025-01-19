@@ -1,6 +1,8 @@
 var _id = id
 var _flicker_chance = irandom_range(1,15)
 
+script_screenwrap()
+
 if _flicker_chance = 1
 {
 	player_ship_sightline_flicker = -0.08
@@ -27,12 +29,12 @@ if hp > max_hp
 
 // soft capping the speed, and making it scale based on thrust power
 
-player_ship_speed_cap = thrust_force * sqrt(thrust_force*0.2) + 2
-if speed > player_ship_speed_cap and alarm[5] < 30 * player_ship_strafe_cooldown
+speed_cap = thrust_force * sqrt(thrust_force*0.2) + 2
+if speed > speed_cap and alarm[5] < 30 * player_ship_strafe_cooldown
 {
 	speed *= 0.97
 }
-else if speed > player_ship_speed_cap * 2
+else if speed > speed_cap * 2
 {
 	speed *= 0.97
 }
@@ -41,7 +43,7 @@ else if speed > player_ship_speed_cap * 2
 
 if speed > 0
 {
-	speed -= 1 - player_ship_friction
+	speed -= friction_force
 }
 
 // now, let's work on controls
@@ -229,7 +231,3 @@ if keyboard_check_pressed(ord("F"))
 	}
 	
 }
-
-// misc
-
-move_wrap(1,1,sprite_width/2)

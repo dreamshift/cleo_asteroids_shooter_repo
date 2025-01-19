@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_fadein",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_fadein",
+  "parent":{
+    "name":"Visual",
+    "path":"folders/Important/Scripts/Visual.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,6 +5,7 @@ event_inherited();
 type = "player"
 faction = "ally"
 uncollidable = false
+screenwrap = true
 player_ship_sightline_flicker = 0
 
 // defines health and health related things right as the game starts
@@ -29,7 +30,7 @@ player_ship_strafe_cooldown = 1
 
 // the speed is multiplied by this value every frame
 
-player_ship_friction = 0.98
+friction_force = 0.02
 
 // we just need to define some relevant rate of fires
 
@@ -38,13 +39,12 @@ player_ship_aoe_explosive_rof = 0.5
 player_ship_heavy_bullet_rof = 1
 player_ship_energy_blast_rof = 1.5
 
-// these don't need a value rn because they'll be updated constantly but they need to be defined so the game engine doesn't freak out
 
-player_ship_speed_cap = 0
+speed_cap = 0
 player_ship_selected_weapon = 1
-player_ship_movement_key = "W"
 alarm[4] = 1
 
+{ // creates 8 player clones for pathfinding, janky and big...
 var _new_phantom_player = instance_create_layer(x,y,"Instances",obj_player_pathfinding_clones)
 with _new_phantom_player
 {
@@ -103,4 +103,5 @@ with _new_phantom_player
 {
 	x_offset = room_width * 1
 	y_offset = room_height * 1
+}
 }

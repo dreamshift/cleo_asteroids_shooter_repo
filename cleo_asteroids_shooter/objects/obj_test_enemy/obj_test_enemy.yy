@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction_enemy",
+  "%Name":"obj_test_enemy",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_faction","path":"objects/obj_faction/obj_faction.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_faction_enemy",
+  "name":"obj_test_enemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Important/Objects/Enemy.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction",
-    "path":"objects/obj_faction/obj_faction.yy",
+    "name":"obj_faction_enemy",
+    "path":"objects/obj_faction_enemy/obj_faction_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemy_basic",
+    "path":"sprites/spr_enemy_basic/spr_enemy_basic.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

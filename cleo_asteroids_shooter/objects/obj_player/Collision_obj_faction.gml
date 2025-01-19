@@ -11,13 +11,7 @@ if other.faction != faction and other.type != "bullet" and other.uncollidable = 
 	{
 		hp -= _crash_damage
 		var _dir = point_direction(x,y,_x,_y)
-		if object_index != obj_enemy_basic and object_index != obj_enemy_basic_elite
-		{
-			motion_add(_dir+180,speed+0.5)
-		}
-		else
-		{
-			motion_add(_dir+180,0.5)
-		}
+		motion_add(_dir+180,0.5)
+
 	}
 }

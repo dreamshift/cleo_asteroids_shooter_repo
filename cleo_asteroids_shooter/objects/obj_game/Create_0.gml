@@ -15,10 +15,10 @@ preset_waves = [
 		enemylist : 1,
 		enemies : [
 			{
-				type : obj_enemy_basic,
+				type : obj_test_enemy,
 				preplaced : false, // false makes enemies appear randomly along screen edges, true is for preset positions and not coded yet
-				maxcount : 6,
-				mincount : 3
+				maxcount : 1,
+				mincount : 1
 			}
 		]
 	},

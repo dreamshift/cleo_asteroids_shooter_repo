@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_debris",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_debris",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Important/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
