@@ -11,12 +11,12 @@
   "name":"obj_test_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Important/Objects/Enemy.yy",
+    "name":"incon",
+    "path":"folders/Important/Objects/Factions/incon.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction_enemy",
-    "path":"objects/obj_faction_enemy/obj_faction_enemy.yy",
+    "name":"obj_faction_incon",
+    "path":"objects/obj_faction_incon/obj_faction_incon.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

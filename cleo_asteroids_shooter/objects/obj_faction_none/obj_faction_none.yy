@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction_ally",
+  "%Name":"obj_faction_none",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_faction_ally",
+  "name":"obj_faction_none",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ally",
-    "path":"folders/Important/Objects/Ally.yy",
+    "name":"none",
+    "path":"folders/Important/Objects/Factions/none.yy",
   },
   "parentObjectId":{
     "name":"obj_faction",

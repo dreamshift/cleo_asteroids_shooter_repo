@@ -1,8 +1,5 @@
 event_inherited();
 
-faction = "enemy"
-type = "generic"
-
 max_hp = 30
 hp = max_hp
 crash_damage = 8

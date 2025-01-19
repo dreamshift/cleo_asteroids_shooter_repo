@@ -20,11 +20,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
-    "path":"folders/Important/Objects/Player.yy",
+    "path":"folders/Important/Objects/Factions/e-tech/Player.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction_ally",
-    "path":"objects/obj_faction_ally/obj_faction_ally.yy",
+    "name":"obj_faction_etech",
+    "path":"objects/obj_faction_etech/obj_faction_etech.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

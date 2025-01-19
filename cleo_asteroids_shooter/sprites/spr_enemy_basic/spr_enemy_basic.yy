@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Old enemies",
-    "path":"folders/Important/Sprites/Old enemies.yy",
+    "name":"Enemies",
+    "path":"folders/Important/Sprites/Old/Enemies.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

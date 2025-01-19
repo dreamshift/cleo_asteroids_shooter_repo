@@ -1,4 +1,4 @@
-faction = "enemy"
+faction = "incon"
 type = "generic"
 
 max_hp = 30

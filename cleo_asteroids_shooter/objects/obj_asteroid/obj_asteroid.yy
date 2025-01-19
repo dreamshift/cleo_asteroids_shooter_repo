@@ -12,12 +12,12 @@
   "name":"obj_asteroid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Neutral",
-    "path":"folders/Important/Objects/Neutral.yy",
+    "name":"none",
+    "path":"folders/Important/Objects/Factions/none.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction_neutral",
-    "path":"objects/obj_faction_neutral/obj_faction_neutral.yy",
+    "name":"obj_faction_none",
+    "path":"objects/obj_faction_none/obj_faction_none.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

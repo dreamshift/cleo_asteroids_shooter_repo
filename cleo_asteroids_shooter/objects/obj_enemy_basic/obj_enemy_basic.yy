@@ -11,12 +11,12 @@
   "name":"obj_enemy_basic",
   "overriddenProperties":[],
   "parent":{
-    "name":"Old enemies",
-    "path":"folders/Important/Objects/Old enemies.yy",
+    "name":"Enemies",
+    "path":"folders/Important/Objects/Old/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction_enemy",
-    "path":"objects/obj_faction_enemy/obj_faction_enemy.yy",
+    "name":"obj_faction_incon",
+    "path":"objects/obj_faction_incon/obj_faction_incon.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

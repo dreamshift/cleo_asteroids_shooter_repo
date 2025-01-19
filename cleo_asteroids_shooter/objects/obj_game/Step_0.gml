@@ -1,7 +1,7 @@
 frame += 1
 // show_debug_message(frame)
 
-if instance_number(obj_faction_enemy) = 0 and alarm[1] > 30
+if instance_number(obj_faction_incon) = 0 and alarm[1] > 30
 {
 	show_debug_message(progress_waves)
 	if progress_waves = true

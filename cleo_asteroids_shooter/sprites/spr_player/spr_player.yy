@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Player",
-    "path":"folders/Important/Sprites/Player.yy",
+    "path":"folders/Important/Sprites/Factions/e-tech/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

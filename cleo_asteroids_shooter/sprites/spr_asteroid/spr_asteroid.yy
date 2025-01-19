@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Neutral",
-    "path":"folders/Important/Sprites/Neutral.yy",
+    "name":"none",
+    "path":"folders/Important/Sprites/Factions/none.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

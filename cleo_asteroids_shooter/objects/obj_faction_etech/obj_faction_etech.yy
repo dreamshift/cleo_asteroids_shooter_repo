@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction_neutral",
+  "%Name":"obj_faction_etech",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_faction_neutral",
+  "name":"obj_faction_etech",
   "overriddenProperties":[],
   "parent":{
-    "name":"Neutral",
-    "path":"folders/Important/Objects/Neutral.yy",
+    "name":"e-tech",
+    "path":"folders/Important/Objects/Factions/e-tech.yy",
   },
   "parentObjectId":{
     "name":"obj_faction",

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
-    "path":"folders/Important/Objects/Player.yy",
+    "path":"folders/Important/Objects/Factions/e-tech/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,6 +6,17 @@ progress_waves = false
 frame = 0
 play_this_wave = false
 
+{ // faction pairs
+faction_pairs = [
+	{
+		faction1 : "incon",
+		faction2 : "e-tech",
+		relation : "enemies"
+	}
+]
+}
+
+{ // waves array
 preset_waves = [
 	{ // 0-5. basic
 		desc : "0-5. basic",
@@ -23,5 +34,5 @@ preset_waves = [
 		]
 	},
 ]
-
 chosen_wave = array_get(preset_waves,0)
+}
