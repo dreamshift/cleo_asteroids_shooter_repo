@@ -2,8 +2,10 @@
 
 event_inherited();
 
+danger = 15
+
 type = "player"
-faction = "ally"
+faction = "etech"
 uncollidable = false
 screenwrap = true
 player_ship_sightline_flicker = 0

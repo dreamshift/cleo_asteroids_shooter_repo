@@ -1,1 +1,1 @@
-faction = "ally"
+faction = "etech"

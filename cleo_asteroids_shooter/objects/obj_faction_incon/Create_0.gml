@@ -1,6 +1,8 @@
 faction = "incon"
 type = "generic"
 
+danger = 0
+
 max_hp = 30
 hp = max_hp
 crash_damage = 8

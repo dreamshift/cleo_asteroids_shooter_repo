@@ -3,7 +3,7 @@ frame += 1
 
 if instance_number(obj_faction_incon) = 0 and alarm[1] > 30
 {
-	show_debug_message(progress_waves)
+	// show_debug_message(progress_waves)
 	if progress_waves = true
 	{
 		alarm[1] = 30

@@ -11,6 +11,7 @@ _particle_direction_offset = 0,
 _particle_direction_variation = 25,
 _particle_x_origin = x,
 _particle_y_origin = y,
+_play_sound = true,
 _sound_min_pitch = 0.75,
 _sound_max_pitch = 1.75,
 _sound_gain = 1)
@@ -32,8 +33,11 @@ _sound_gain = 1)
 		var _creator_image_angle = image_angle
 		var _creator_direction = direction
 		var _creator_speed = speed
-		var _sound_thrust_pitch = (random_range(_sound_min_pitch, _sound_max_pitch));
-		audio_play_sound(snd_thrust, 0, 0, _sound_gain, 0, _sound_thrust_pitch);
+		if _play_sound = true
+		{
+			var _sound_thrust_pitch = (random_range(_sound_min_pitch, _sound_max_pitch));
+			audio_play_sound(snd_thrust, 0, 0, _sound_gain, 0, _sound_thrust_pitch);
+		}
 		repeat(_particle_count)
 		{
 			var _newthrust = instance_create_layer(_particle_x_origin, _particle_y_origin, "Instances", obj_thrust);

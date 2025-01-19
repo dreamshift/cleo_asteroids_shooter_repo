@@ -1,5 +1,7 @@
 event_inherited();
 
+danger = 1
+
 max_hp = 30
 hp = max_hp
 crash_damage = 8

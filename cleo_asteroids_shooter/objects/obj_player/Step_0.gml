@@ -85,28 +85,28 @@ if keyboard_check_pressed(ord("W"))
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown
 	speed = speed * 0.5
-	script_thrust(strafe_force ,0 ,2 ,15 ,2 ,5 ,0 ,45 ,x ,y ,1 ,1.25 ,3)
+	script_thrust(strafe_force ,0 ,2 ,15 ,2 ,5 ,0 ,45 ,x ,y ,1 , 1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("A")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	script_thrust(strafe_force ,90 ,2 ,15 ,2 ,5 ,90 ,45 ,x ,y ,1 ,1.25 ,3)
+	script_thrust(strafe_force ,90 ,2 ,15 ,2 ,5 ,90 ,45 ,x ,y ,1 ,1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("S")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	script_thrust(strafe_force ,180 ,2 ,15 ,2 ,5 ,180 ,45 ,x ,y ,1 ,1.25 ,3)
+	script_thrust(strafe_force ,180 ,2 ,15 ,2 ,5 ,180 ,45 ,x ,y ,1 ,1 ,1.25 ,3)
 }
 
 if keyboard_check_pressed(ord("D")) 
 {
 	alarm[5] = 60 * player_ship_strafe_cooldown	
 	speed = speed* 0.5
-	script_thrust(strafe_force ,-90 ,2 ,15 ,2 ,5 ,-90 ,45 ,x ,y ,1 ,1.25 ,3)
+	script_thrust(strafe_force ,-90 ,2 ,15 ,2 ,5 ,-90 ,45 ,x ,y ,1 ,1 ,1.25 ,3)
 }
 }
 
@@ -123,8 +123,10 @@ if mouse_check_button(mb_right) if player_ship_selected_weapon = 1
 
 		alarm[1] = 60 / player_ship_light_bullet_rof
 		var _light_bullet_new = instance_create_layer(x,y,"Instances",obj_light_bullet)
+		var _image_angle = image_angle
 		with _light_bullet_new
 		{
+			image_angle = _image_angle
 			motion_set(obj_player.image_angle,6)
 			motion_add(obj_player.direction,obj_player.speed/2)
 			faction = "ally"

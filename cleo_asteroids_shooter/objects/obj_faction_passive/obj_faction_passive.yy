@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_faction_none",
+  "%Name":"obj_faction_passive",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_faction_none",
+  "name":"obj_faction_passive",
   "overriddenProperties":[],
   "parent":{
-    "name":"none",
-    "path":"folders/Important/Objects/Factions/none.yy",
+    "name":"passive",
+    "path":"folders/Important/Objects/Factions/passive.yy",
   },
   "parentObjectId":{
     "name":"obj_faction",

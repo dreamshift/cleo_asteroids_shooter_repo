@@ -13,13 +13,19 @@ if fade_delay_timer <= 0
 
 if fade_delay_timer <= 1
 {
-	image_xscale -= 0.08
-	image_yscale = image_xscale
+	scale -= 0.08
 }
 if fade_delay_timer > 30
 {
-	image_xscale = scale
-	image_yscale = scale
+	scale = start_scale
+}
+image_xscale = scale
+image_yscale = scale
+var _speed_scaled = speed / 24
+var _length_scale = lerp(1,8,_speed_scaled)
+if do_length_scale = true
+{
+image_xscale = scale * _length_scale
 }
 
 if image_xscale <= 0

@@ -7,21 +7,33 @@ frame = 0
 play_this_wave = false
 
 { // faction pairs
-faction_pairs = [
-	{
-		faction1 : "incon",
-		faction2 : "e-tech",
-		relation : "enemies"
-	}
-]
+global.faction_pairs = {
+
+incon : {
+	incon  : {flee : 0.0, attack : 0.0, heal : 0.5, ignore : 0.5},
+	etech  : {flee : 0.0, attack : 1.0, heal : 0.0, ignore : 0.0},
+	passive: {flee : 0.0, attack : 1.0, heal : 0.0, ignore : 0.0},
+},
+etech : {
+	incon  : {flee : 0.2, attack : 0.8, heal : 0.0, ignore : 0.0},
+	etech  : {flee : 0.0, attack : 0.0, heal : 0.8, ignore : 0.2},
+	passive: {flee : 0.0, attack : 0.0, heal : 0.1, ignore : 0.9},
+},
+passive : {
+	incon  : {flee : 0.9, attack : 0.1, heal : 0.0, ignore : 0.0},
+	etech  : {flee : 0.5, attack : 0.0, heal : 0.0, ignore : 0.5},
+	passive: {flee : 0.1, attack : 0.1, heal : 0.1, ignore : 0.7},
+},
+
+}
 }
 
 { // waves array
 preset_waves = [
-	{ // 0-5. basic
-		desc : "0-5. basic",
+	{ // 0-50. basic
+		desc : "0-50. basic",
 		timer : 8, // time in seconds before the next wave is force spawned, NO enemies on screen to have the next wave spawn early
-		maxwave : 5,
+		maxwave : 50,
 		minwave : 0,
 		enemylist : 1,
 		enemies : [

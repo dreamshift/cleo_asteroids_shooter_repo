@@ -94,7 +94,7 @@ if not ds_list_empty(_search_list_light_bullet)
 			split = false
 			var _current_light_bullet_direction = direction
 			var _current_light_bullet_fade_delay = fade_delay
-			var _split_scaling = image_xscale * 5
+			var _split_scaling = scale * 5
 			_split_scaling = round(_split_scaling)
 			var _ship_id = id
 			if creator = _ship_id
@@ -110,8 +110,10 @@ if not ds_list_empty(_search_list_light_bullet)
 					
 					with _new_bullet
 					{
+						do_length_scale = false
 						split = false
 						motion_add(_heavy_bullet_direction_change,_current_light_bullet_speed)
+						image_angle = direction
 						faction = _faction
 						light_bullet_dmg = light_bullet_dmg
 						fade_delay = _current_light_bullet_fade_delay * random_range(0.2,0.3)
@@ -135,7 +137,9 @@ if not ds_list_empty(_search_list_light_bullet)
 					
 					with _new_bullet
 					{
+						do_length_scale = false
 						motion_add(_heavy_bullet_direction_change,_current_light_bullet_speed)
+						image_angle = direction
 						faction = _faction
 						light_bullet_dmg = light_bullet_dmg
 						fade_delay = _current_light_bullet_fade_delay * random_range(0.2,0.3)

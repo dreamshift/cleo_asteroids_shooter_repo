@@ -12,12 +12,12 @@
   "name":"obj_asteroid",
   "overriddenProperties":[],
   "parent":{
-    "name":"none",
-    "path":"folders/Important/Objects/Factions/none.yy",
+    "name":"passive",
+    "path":"folders/Important/Objects/Factions/passive.yy",
   },
   "parentObjectId":{
-    "name":"obj_faction_none",
-    "path":"objects/obj_faction_none/obj_faction_none.yy",
+    "name":"obj_faction_passive",
+    "path":"objects/obj_faction_passive/obj_faction_passive.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

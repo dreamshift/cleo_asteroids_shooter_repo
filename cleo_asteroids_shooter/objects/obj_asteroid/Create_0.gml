@@ -1,4 +1,5 @@
 event_inherited();
+danger = 0
 max_hp = 10
 hp = max_hp
 speed_cap = 6

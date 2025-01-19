@@ -18,7 +18,7 @@ if fade_delay_timer > 1
 	}
 }
 
-if image_xscale > 3
+if scale > 3
 {
 
 
