@@ -53,6 +53,7 @@
     {"name":"script_entity_pick_target","order":1,"path":"scripts/script_entity_pick_target/script_entity_pick_target.yy",},
     {"name":"script_entity_place_info","order":2,"path":"scripts/script_entity_place_info/script_entity_place_info.yy",},
     {"name":"script_fadein","order":1,"path":"scripts/script_fadein/script_fadein.yy",},
+    {"name":"script_get_relation","order":3,"path":"scripts/script_get_relation/script_get_relation.yy",},
     {"name":"script_player_exists","order":1,"path":"scripts/script_player_exists/script_player_exists.yy",},
     {"name":"script_screenwrap","order":1,"path":"scripts/script_screenwrap/script_screenwrap.yy",},
     {"name":"script_speed","order":2,"path":"scripts/script_speed/script_speed.yy",},

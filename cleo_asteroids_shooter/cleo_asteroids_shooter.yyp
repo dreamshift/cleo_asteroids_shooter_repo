@@ -88,6 +88,7 @@
     {"id":{"name":"script_entity_place_info","path":"scripts/script_entity_place_info/script_entity_place_info.yy",},},
     {"id":{"name":"script_entity_place_list","path":"scripts/script_entity_place_list/script_entity_place_list.yy",},},
     {"id":{"name":"script_fadein","path":"scripts/script_fadein/script_fadein.yy",},},
+    {"id":{"name":"script_get_relation","path":"scripts/script_get_relation/script_get_relation.yy",},},
     {"id":{"name":"script_health","path":"scripts/script_health/script_health.yy",},},
     {"id":{"name":"script_player_exists","path":"scripts/script_player_exists/script_player_exists.yy",},},
     {"id":{"name":"script_screenwrap","path":"scripts/script_screenwrap/script_screenwrap.yy",},},
