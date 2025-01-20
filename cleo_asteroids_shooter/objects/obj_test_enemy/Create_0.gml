@@ -5,6 +5,7 @@ danger = 1
 max_hp = 30
 hp = max_hp
 crash_damage = 8
+push = 0.2
 
 thrust_force = 1
 friction_force = 0.04

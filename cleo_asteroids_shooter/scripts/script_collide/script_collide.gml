@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function script_collide(_push = 0.1, _push_scaling = 0.1,
-_collide_same_faction = false)
+_collide_same_faction = false,
+_damage_speed_scaling = 7)
 {
 
 var _hp = hp
@@ -17,7 +18,7 @@ if other.faction != faction and other.type != "bullet" and other.uncollidable = 
 {
 	with other
 	{
-		hp -= _crash_damage
+		hp -= _crash_damage + (_speed*_damage_speed_scaling)
 		var _dir = point_direction(x,y,_x,_y) // direction from other -> og
 		var _final_push = _push + speed * _push_scaling
 		motion_add(_dir+180,_final_push) // other pushes away from og, with a flat value of 0.1 and scaling up with its current speed
@@ -30,7 +31,7 @@ else
 	{
 		with other
 		{
-			hp -= _crash_damage
+			hp -= _crash_damage + (_speed*_damage_speed_scaling)
 			var _dir = point_direction(x,y,_x,_y) // direction from other -> og
 			var _final_push = _push + speed * _push_scaling
 			motion_add(_dir+180,_final_push) // other pushes away from og, with a flat value of 0.1 and scaling up with its current speed

@@ -1,21 +1,14 @@
-if image_alpha < 1
+event_inherited();
+
+script_collide_entity(obj_faction,crash_damage,false,push,1,7)
+
+if !player_exists()
 {
-	image_alpha += 0.03
+	exit
 }
 
-if hp <= 0
-{
-	instance_destroy()
-}
-if hp > max_hp
-{
-	hp = max_hp
-}
+//image_angle = point_direction(x,y,obj_player.x,obj_player.y)
+//script_thrust(thrust_force, 0, 0, 0.25, 1, 2, 0, 25,x ,y ,0)
 
-move_wrap(1,1,sprite_width/2)
 image_angle += rotation_speed
 
-if speed >= speed_cap
-{
-	speed *= 0.98
-}

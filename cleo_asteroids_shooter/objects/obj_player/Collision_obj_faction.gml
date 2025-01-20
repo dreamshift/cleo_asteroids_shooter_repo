@@ -9,7 +9,7 @@ if other.faction != faction and other.type != "bullet" and other.uncollidable = 
 {
 	with other
 	{
-		hp -= _crash_damage
+		// hp -= _crash_damage
 		var _dir = point_direction(x,y,_x,_y)
 		motion_add(_dir+180,0.5)
 	}

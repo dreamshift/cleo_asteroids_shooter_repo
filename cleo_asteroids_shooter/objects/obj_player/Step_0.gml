@@ -131,6 +131,7 @@ if mouse_check_button(mb_right) if player_ship_selected_weapon = 1
 			motion_add(obj_player.direction,obj_player.speed/2)
 			faction = "ally"
 			creator = _id
+			light_bullet_dmg = 6
 		}
 		repeat 1
 		{

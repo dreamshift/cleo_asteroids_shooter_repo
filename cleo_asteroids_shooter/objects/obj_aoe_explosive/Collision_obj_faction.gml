@@ -1,3 +1,5 @@
+//script_collide_object(
+
 var _hp = hp
 var _direction = direction
 var _speed = speed
