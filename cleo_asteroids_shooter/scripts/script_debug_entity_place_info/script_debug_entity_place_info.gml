@@ -7,6 +7,8 @@ function script_debug_entity_place_info(_entity_struct){
 		show_debug_message("script_debug_entity: _entity_struct undefined!")
 		return
 	}
+	else
+	{
 	var _relation = script_get_relation(_entity_struct)
 	show_debug_message(_entity_struct.entity_id)
 	show_debug_message(object_get_name(_entity_struct.entity_object_index))
@@ -16,5 +18,6 @@ function script_debug_entity_place_info(_entity_struct){
 	show_debug_message("")
 	show_debug_message(_relation)
 	show_debug_message("")
+	}
 
 }

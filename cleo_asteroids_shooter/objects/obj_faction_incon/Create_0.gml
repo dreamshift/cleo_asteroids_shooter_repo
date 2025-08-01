@@ -14,6 +14,7 @@ speed_cap = 3
 
 uncollidable = false
 screenwrap = true
+current_target = undefined
 
 image_alpha = 0
 

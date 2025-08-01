@@ -41,10 +41,28 @@ preset_waves = [
 				type : obj_test_enemy,
 				preplaced : false, // false makes enemies appear randomly along screen edges, true is for preset positions and not coded yet
 				maxcount : 10,
-				mincount : 10
+				mincount : 5
 			}
 		]
 	},
 ]
 chosen_wave = array_get(preset_waves,0)
+}
+	
+{
+global.entity_goals = {
+	flee : [
+		
+	],
+	attack : [
+		"kill_entity",
+		"deal_damage",
+	],
+	heal : [
+		
+	],
+	ignore : [
+		
+	],
+}	
 }

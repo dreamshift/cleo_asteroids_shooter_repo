@@ -31,16 +31,17 @@ if ds_list_empty(_entity_place_info)
 			
 			var _current_package = ds_list_find_value(_entity_place_info, i)
 			
+			
 			if _current_package.entity_faction = _faction and _exclude_same_faction = true
 			{
-				show_debug_message("entity_faction = _faction, and _exclude_same_faction = true")
+				//show_debug_message("entity_faction = _faction, and _exclude_same_faction = true")
 				continue
 			}
 			
 			
 			if _current_package.entity_uncollidable = true or uncollidable = true
 			{
-				show_debug_message("entity_uncollidable = true, or uncollidable = true")
+				//show_debug_message("entity_uncollidable = true, or uncollidable = true")
 				continue
 			}
 			
@@ -49,8 +50,8 @@ if ds_list_empty(_entity_place_info)
 			
 			if !variable_instance_exists(_current_package.entity_id, "hp")
 			{
-				show_debug_message("script_collide_object: _current_package hp does not exist!")
-				show_debug_message(object_get_name(_current_package.entity_object_index))
+				//show_debug_message("script_collide_object: _current_package hp does not exist!")
+				//show_debug_message(object_get_name(_current_package.entity_object_index))
 				continue
 			}
 				

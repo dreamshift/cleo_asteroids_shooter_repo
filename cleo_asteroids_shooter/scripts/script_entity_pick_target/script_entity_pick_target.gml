@@ -10,10 +10,24 @@ if not ds_list_empty(_entity_place_info)
 {
 	var _closest_entity = ds_list_find_value(_entity_place_info,0)
 	script_debug_entity_place_info(_closest_entity)
+	current_target = _closest_entity
 }
 
 ds_list_destroy(_entity_place_info) //pull values out of the list and store them as temp variables before doing this,
 // you can't destroy a list after doing return!
 // it's 3:30 AM and i would love to keep going but i feel like shit and i need to sleep -fate1&2
 
+}
+
+// danger (mod. distance) -> action (flee, attack, heal, ignore) -> goal 
+
+
+
+{
+	//entity_id
+	//danger
+	//x
+	//y
+	//action
+	//goal
 }

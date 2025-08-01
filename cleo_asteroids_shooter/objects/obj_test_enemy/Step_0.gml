@@ -15,7 +15,7 @@ script_collide_entity(obj_faction,0,false,push,0)  // collide with same object i
 script_collide_entity(obj_faction,crash_damage,true,push,0.5,3) // collide with obj_faction
 
 
-//script_entity_pick_target()
+script_entity_pick_target()
 //var _entity_place_list = script_entity_place_list(x, y, obj_faction, spr_room_size, 4, true)
 //var _entity_place_info = script_entity_place_info(_entity_place_list)
 //ds_list_destroy(_entity_place_list)
