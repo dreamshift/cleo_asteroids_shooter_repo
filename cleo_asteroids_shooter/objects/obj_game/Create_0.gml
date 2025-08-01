@@ -10,19 +10,19 @@ play_this_wave = false
 global.faction_pairs = {
 
 incon : {
-	incon  : {flee : 0.0, attack : 0.0, heal : 0.5, ignore : 0.5},
-	etech  : {flee : 0.0, attack : 1.0, heal : 0.0, ignore : 0.0},
-	passive: {flee : 0.0, attack : 1.0, heal : 0.0, ignore : 0.0},
+	incon  : {flee : 0.0, attack : 0.0, heal : 1.0},
+	etech  : {flee : 0.0, attack : 1.0, heal : 0.0},
+	passive: {flee : 0.0, attack : 1.0, heal : 0.0},
 },
 etech : {
-	incon  : {flee : 0.2, attack : 0.8, heal : 0.0, ignore : 0.0},
-	etech  : {flee : 0.0, attack : 0.0, heal : 0.8, ignore : 0.2},
-	passive: {flee : 0.0, attack : 0.0, heal : 0.1, ignore : 0.9},
+	incon  : {flee : 0.2, attack : 0.8, heal : 0.0},
+	etech  : {flee : 0.0, attack : 0.0, heal : 0.8},
+	passive: {flee : 0.0, attack : 0.0, heal : 0.1},
 },
 passive : {
-	incon  : {flee : 0.9, attack : 0.1, heal : 0.0, ignore : 0.0},
-	etech  : {flee : 0.5, attack : 0.0, heal : 0.0, ignore : 0.5},
-	passive: {flee : 0.1, attack : 0.1, heal : 0.1, ignore : 0.7},
+	incon  : {flee : 0.9, attack : 0.1, heal : 0.0},
+	etech  : {flee : 0.5, attack : 0.0, heal : 0.0},
+	passive: {flee : 0.1, attack : 0.1, heal : 0.1},
 },
 
 }

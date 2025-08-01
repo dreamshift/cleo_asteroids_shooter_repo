@@ -5,12 +5,21 @@ var _entity_place_list = script_entity_place_list(x, y, obj_faction, spr_room_si
 var _entity_place_info = script_entity_place_info(_entity_place_list)
 ds_list_destroy(_entity_place_list)
 
+var _current_target = undefined
+var _check_current_target = undefined
+var _choice = undefined
 
 if not ds_list_empty(_entity_place_info)
 {
-	var _closest_entity = ds_list_find_value(_entity_place_info,0)
-	script_debug_entity_place_info(_closest_entity)
-	current_target = _closest_entity
+	while(is_undefined(_choice))
+	{
+		_check_current_target = script_entity_pick_danger(_entity_place_info)
+		var _check_current_target_relation = script_get_relation(_check_current_target)
+		{ 
+			// _action = "flee", "attack", "heal," etc
+			// current_target = _
+			// current_target_action = 
+		}
 }
 
 ds_list_destroy(_entity_place_info) //pull values out of the list and store them as temp variables before doing this,

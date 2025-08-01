@@ -2,6 +2,10 @@ faction = "incon"
 type = "generic"
 
 danger = 0
+danger_threshold = undefined
+does_attack = true
+does_heal = false
+does_flee = false
 
 max_hp = 30
 hp = max_hp
@@ -15,6 +19,7 @@ speed_cap = 3
 uncollidable = false
 screenwrap = true
 current_target = undefined
+current_target_action = undefined
 
 image_alpha = 0
 
